@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A responsive webpage using Flexbox and Grid" />
+  <title>Responsive Layout Example</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Responsive Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" aria-label="Home">Home</a></li>
+        <li><a href="#about" aria-label="About">About</a></li>
+        <li><a href="#services" aria-label="Services">Services</a></li>
+        <li><a href="#contact" aria-label="Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="flex-container">
+      <article>
+        <h2>Welcome</h2>
+        <p>This section uses Flexbox to layout the content responsively.</p>
+      </article>
+      <aside>
+        <h3>Sidebar</h3>
+        <p>Sidebar content aligned next to main article.</p>
+      </aside>
+    </section>
+
+    <section id="services" class="grid-container">
+      <h2>Our Services</h2>
+      <div class="service-item">Service 1</div>
+      <div class="service-item">Service 2</div>
+      <div class="service-item">Service 3</div>
+      <div class="service-item">Service 4</div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Information about our company goes here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Responsive Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
