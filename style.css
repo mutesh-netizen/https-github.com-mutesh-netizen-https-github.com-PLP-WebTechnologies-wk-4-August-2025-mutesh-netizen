@@ -1,0 +1,123 @@
+/* Basic Reset and Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header Styling */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+/* Flexbox Container */
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.flex-container article {
+  flex: 3;
+}
+
+.flex-container aside {
+  flex: 1;
+  background-color: #e3f2fd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.service-item {
+  background-color: #1976d2;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* About Section */
+#about {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #004080;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive Breakpoints */
+
+/* Tablets and small desktops */
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
